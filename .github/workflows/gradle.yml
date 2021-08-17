@@ -26,4 +26,4 @@ jobs:
     - name: запускаем SUT
       run: java -jar ./artifacts/app-order.jar -P:profile=test &
     - name: Build with Gradle
-      run: ./gradlew test -Dselenide.headless=true
+      run: ./gradlew test --info 
